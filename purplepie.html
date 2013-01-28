@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Purple Pie</title>
+    <style>
+      body { font-family: Helvetica, Arial, sans-serif; }
+      .chart-group { float: left; margin-right: 100px; }
+      .chart-group h4 { font-size: 12px; color: #ccc; width: 120px; }
+      .row { height: 120px; }
+      .row::after { clear:both; }
+      .row::before, .row::after { display: table; line-height: 0; content: ""; }
+      .pie-ctr { box-shadow: 0px 0px 4px #ccc; }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Purple Pie</h2>
+      <div class="row">
+        <div class="chart-group">
+          <h4>5</h4>
+          <div class="pie-ctr" data-slices="[5]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>5, 50</h4>
+          <div class="pie-ctr" data-slices="[5,50]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>25, 10, 30</h4>
+          <div class="pie-ctr" data-slices="[25,10,30]"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="chart-group">
+          <h4>22, 5, 15</h4>
+          <div class="pie-ctr" data-slices="[22,5,15]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>50</h4>
+          <div class="pie-ctr" data-slices="[50]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>75, 5</h4>
+          <div class="pie-ctr" data-slices="[75,5]"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="chart-group">
+          <h4>5,10,15,20,25,10,5</h4>
+          <div class="pie-ctr" data-slices="[5,10,15,20,25,10,5]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>25, 25, 25, 25</h4>
+          <div class="pie-ctr" data-slices="[25, 25, 25, 25]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>10, 20, 30, 40</h4>
+          <div class="pie-ctr" data-slices="[10, 20, 30, 40]"></div>
+        </div>
+      </div>
+    </div>
+    <div id="container2">
+      <div class="row">
+        <div class="chart-group">
+          <h4>25,50</h4>
+          <div class="pie-ctr" data-slices="[25,50]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>5,10,15,20,25,10,5</h4>
+          <div class="pie-ctr" data-slices="[5,10,15,20,25,10,5]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>90</h4>
+          <div class="pie-ctr" data-slices="[90]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>25,50</h4>
+          <div class="pie-ctr" data-slices="[25,50]"></div>
+        </div>
+      </div>
+    </div>
+    <div id="container3">
+      <div class="row">
+        <div class="chart-group">
+          <h4>25,50</h4>
+          <div class="pie-ctr" data-slices="[25,50]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>5,10,15,20,25,10,5</h4>
+          <div class="pie-ctr" data-slices="[5,10,15,20,25,10,5]"></div>
+        </div>
+        <div class="chart-group">
+          <h4>5,10,15,20,25,10,5,5,3,2</h4>
+          <div class="pie-ctr" data-slices="[5,10,15,20,25,10,5,5,3,2]"></div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="purplepie.js"></script>
+    <script type="text/javascript">
+      $('#container .pie-ctr').purplePie({ 'background-color': '#f6f6f6',
+                                           'size': '40px',
+                                           'colors': ['#810f7c', '#8856a7', '#8c96c6', '#b3cde3', '#edf8fb'] 
+      });
+      $('#container2 .pie-ctr').purplePie({ 'background-color': '#f6f6f6',
+                                            'size': '20px'
+      });
+      $('#container3 .pie-ctr').purplePie({ 'background-color': '#fff',
+                                            'size': '60px'
+      });
+    </script>
+  </body>
+</html>
+
