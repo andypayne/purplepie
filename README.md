@@ -5,14 +5,14 @@ Purple Pie is a _very_ simple pie chart plugin for jQuery.
 
 ## Usage
 
-To use it, specify the slice sizes in percentages (0-100) in a data-slices
-attribute of a container div:
+To use it, first include jQuery before purplepie.js. Then specify the slice
+sizes in percentages (0-100) in a data-slices attribute of a container div:
 
 ```html
 <div class="pie-pan" data-slices="[25,10,30]"></div>
 ```
 
-Then call invoke purplePie and pass in options:
+Then invoke purplePie and pass in options:
 
 ```javascript
 $('#container .pie-pan').purplePie({ 'background-color': '#f6f6f6',
